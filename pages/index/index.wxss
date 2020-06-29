@@ -1,0 +1,62 @@
+page{
+    background-color: #edece8;
+}
+.swiper-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20rpx 0;
+}
+.swiper-container swiper{
+    width: 650rpx;
+    height:340rpx;
+    text-align: center;
+}
+.swiper-container swiper image{
+            width: 95%;
+            height: 100%;
+            border-radius:20rpx;
+           
+}
+.context{
+    background-color:white;
+    display: flex;
+}
+.context navigator{
+    flex: 1;
+    text-align: center;
+}
+.context navigator image{
+    width: 40%;
+}
+.context-title{
+        font-size: 20rpx;
+        font-family:Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+.jinxuan{
+    background-color: white;
+    margin-top: 20rpx;
+}
+.jinxuan-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20rpx;
+}
+.jinxuan-title image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.jinxuan-list{
+        display: flex;
+}
+.jinxuan-item{
+    flex: 1;
+    padding:0 20rpx;
+   
+}
+.jinxuan-item image{
+    width: 100%;
+    border-radius: 15rpx;
+    height: auto;
+}

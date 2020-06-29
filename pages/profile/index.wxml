@@ -1,0 +1,35 @@
+<view class="user_info_wrap">
+<view  wx:if="{{userinfo.avatarUrl}}"class="user_img_wrap">
+<image class="user_img_bg"src="{{userinfo.avatarUrl}}" />
+<view  class="userinfo">
+<image class="user_icon" src="{{userinfo.avatarUrl}}" />
+<view class="user_name">{{userinfo.nickName}}</view>
+</view> 
+</view>
+<view wx:else>
+    <navigator class="user_btn" url="/pages/login/index">登录</navigator>
+</view>
+</view>
+    <view class="user_myorder">
+        <view class="user_myorder_wrap">
+              <!-- <view class="gon" url="/pages/order/index?type=1">
+        <view class="iconfont icon-guanyu"></view>
+         <view class="user_myorder_item">我发布的</view>
+        </view> -->
+         <navigator  class="gon" url="/pages/collect/index" >
+        <view class="iconfont icon-shoucang"></view>
+         <view class="user_myorder_item">我的收藏</view>
+       </navigator>
+          <view  class="kefu gon" >
+        <view class="iconfont icon-kefu" ></view>
+         <view class="user_myorder_item">联系客服</view>
+         <button open-type="contact" class="btn" style="position:absolute;width:100%;height:100%;top:0;left:0;opacity:0"></button>
+        </view>
+        <view class="gon">
+         <navigator  url="/pages/about/index">
+          <view class="iconfont icon-guanyu"></view>
+         <view class="user_myorder_item">关于我们</view>
+       </navigator>
+       </view>
+    </view>
+    </view>

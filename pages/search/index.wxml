@@ -1,0 +1,7 @@
+<view class="search_content">
+    <input type="text" placeholder="请输入内容" class="search" bindinput="handleinput" value="{{svalue}}"></input>
+    <button class="btn" size="mini" hidden="{{!isFocus}}" bindtap="btntap">清除</button>
+</view>
+<navigator  class="search_item" wx:for="{{searchdata}}" url="/pages/audio_details/index?_id={{item._id}}">
+    {{item.title}} 
+</navigator>

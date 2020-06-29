@@ -1,0 +1,19 @@
+<!-- <navigator wx:if="{{ishow}}"    wx:for="{{collect}}" wx:key="*this" class="audio_list" url="/pages/audio_details/index?_id={{item._id}}&type={{item.type}}" >
+    <image mode="widthFix" src="{{item.pic}}"/>
+<view class="right">
+    <view class="title">{{item.title}}</view>
+    <view  class="iconfont icon-bofang"><text >{{item.howmany}}人播放</text></view>
+</view>
+</navigator> -->
+<scroll-view scroll-y="{{isScroll}}" style='height:{{windowHeight}}px'  >
+    <navigator wx:key="item" wx:for="{{data}}" wx:key="*this" class="audio_list" url="/pages/audio_details/index?_id={{item._id}}&type={{item.type}}" >
+    <view data-index='{{index}}' class="order-item" bindtouchstart="drawStart" bindtouchmove="drawMove" bindtouchend="drawEnd" style="right:{{item.right}}rpx">
+         <image mode="widthFix" src="{{item.pic}}" style="height:auto"/>
+         <view class="right">
+    <view class="title">{{item.title}}</view>
+    <view  class="iconfont icon-bofang"><text >{{item.howmany}}人播放</text></view>
+    </view>
+        <view class="remove" catchtap="delItem" data-id='{{item._id}}'>删除 </view>
+    </view>
+    </navigator>
+</scroll-view>

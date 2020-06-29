@@ -1,0 +1,87 @@
+
+.audiocontainer{
+	height: 40vh;
+	background-color: #588080;
+	padding-top: 20rpx;
+}
+.title{
+	text-align: center;
+	color:white;
+}
+.pic_container{
+	display: flex;
+	justify-content: center;
+	height:206rpx ;
+}
+.pic{
+	margin-top: 30rpx;
+	width: 250rpx;
+}
+.pic image{
+	width: 100%;
+	border-radius: 15rpx;
+}
+.body-view{	
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20rpx;
+	position: relative;
+	padding-right: 30rpx;
+}
+.sli_text{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	font-size: 22rpx;
+}
+.footer{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.icon-previous,.icon-bofang1,.icon-next,.icon-play_icon{
+		margin: 10rpx 40rpx;
+}
+.icon-previous,.icon-next{
+	font-size: 60rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+.icon-bofang1,.icon-play_icon{
+	font-size: 100rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.shouchang{
+	font-size: 40rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 60rpx;
+}
+.collect{
+	font-size: 40rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 60rpx;
+	color: red;
+}
+.collect_container{
+	position: absolute;
+	right:30rpx;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+}
+.collect_container text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20rpx;
+	margin-left: 10rpx;
+}

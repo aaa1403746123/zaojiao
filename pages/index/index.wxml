@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="swiper-container">
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" circular="{{true}}">
+        <block wx:for="{{swiperdata}}" wx:key="_id">
+            <navigator url="{{item.navigator_src}}" open-type="reLaunch">
+            <swiper-item>
+                <image  class="swiper-image" src="{{item.homeswiper}}"/>
+            </swiper-item>
+            </navigator>
+        </block>
+    </swiper>
+</view>
+<view class="context">
+    <navigator wx:for="{{catelist}}" wx:key="*this"  url="/pages/audio_list/index?type={{item.type}}">
+         <image src="{{item.src}}" mode="widthFix" style="height:auto;width:40%"/>
+         <view class="context-title">{{item.title}}</view>
+    </navigator>
+	<navigator  open-type="reLaunch"  url="/pages/read/index">
+	     <image src="../../svg/tree.png" mode="widthFix" style="height:auto;width:40%" />
+	     <view class="context-title">更多</view>
+	</navigator>
+</view>
+<view  class="jinxuan">
+    <view class="jinxuan-title">
+        <image src="../../svg/fire.png" />
+        <text>最近火热</text>
+    </view>
+    <view class="jinxuan-list" >
+        <navigator class="jinxuan-item" wx:for="{{latesthot}}" wx:key="*this"   url="/pages/audio_details/index?_id={{item._id}}">
+       <image  mode="widthFix" src="{{item.pic}}" style="height:auto"/>
+       <view style="text-align:center;font-size:28rpx">{{item.title}}</view>
+    </navigator>
+    </view>
+</view>

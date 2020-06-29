@@ -1,0 +1,8 @@
+<navigator  wx:for="{{audioList}}" class="audio_list" url="/pages/audio_details/index?_id={{item._id}}&type={{item.type}}" >
+    <image mode="widthFix" src="{{item.pic}}" style="height:auto"/>
+<view class="right">
+    <view class="title">{{item.title}}</view>
+    <view class="introduce">{{item.introduce}}</view>
+    <view  class="iconfont icon-bofang"><text >{{item.howmany}}人播放</text></view>
+</view>
+</navigator>

@@ -1,0 +1,123 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.4",
+	"appid": "wxaa3964c6e00121f6",
+	"projectname": "zaojiao",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "read",
+					"pathName": "pages/read/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "娃娃秀",
+					"pathName": "pages/munite/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/profile/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "列表",
+					"pathName": "pages/audio_list/index",
+					"query": "cid=0",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收藏",
+					"pathName": "pages/collect/index",
+					"query": "cid=0",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "聊天详情",
+					"pathName": "pages/munite_details/index",
+					"query": "tid=20",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "addpush",
+					"pathName": "pages/addpush/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "社区",
+					"pathName": "pages/munite/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/index",
+					"query": "cid=0",
+					"scene": null
+				}
+			]
+		}
+	}
+}

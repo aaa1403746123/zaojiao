@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/read/index",  
+    "pages/profile/index",
+    "pages/login/index",
+    "pages/audio_list/index",
+    "pages/audio_details/index",
+    "pages/about/index",
+    "pages/collect/index",
+    "pages/search/index"
+  ],
+  "requiredBackgroundModes":["audio"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "宝贝小故事",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff2d4a",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./icon/shouye.png",
+        "selectedIconPath": "./icon/shouye1.png"
+      },
+      {
+        "pagePath": "pages/read/index",
+        "text": "列表",
+        "iconPath": "./icon/caidan.png",
+        "selectedIconPath": "./icon/caidan1.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "./icon/my.png",
+        "selectedIconPath": "./icon/my1.png"
+      }
+    ]
+  }
+  
+}

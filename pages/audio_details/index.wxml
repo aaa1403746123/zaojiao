@@ -1,0 +1,21 @@
+<view class="audiocontainer">
+   <view class="title">{{title}}</view>
+   <view  class="pic_container">
+   <view class="pic">
+       <image mode="widthFix" src="{{pic}}" style="height:auto" />
+   </view>
+   </view>
+      <view class="body-view">
+  <slider bindchange="slider1change" bindchanging="changing" block-size="12" max="{{duration}}" value="{{offset}}"/>
+        <text class="sli_text">{{alltime}}</text>
+        </view>
+<view class="footer">
+<view class="iconfont icon-previous" bindtap="toprivies"> </view>
+<view class="iconfont {{isopen ? 'icon-bofang1' :'icon-play_icon'}}}" bindtap="tostop"></view>
+<view class="iconfont icon-next" bindtap="tonext"></view>
+<view class="collect_container">
+    <view class="{{isSelected ? 'collect' :'shouchang'}} iconfont icon-icon-" bindtap="collect"></view>
+    <text> 收藏</text>
+</view>
+    </view>
+</view>

@@ -1,0 +1,50 @@
+<searchInput></searchInput>
+ <view class="context">
+    <navigator wx:for="{{catelist}}" wx:key="*this"  url="/pages/audio_list/index?type={{item.type}}">
+         <image src="{{item.src}}" mode="widthFix" style="height:auto"/>
+         <view class="context-title">{{item.title}}</view>
+    </navigator>
+</view>
+<view  class="today_tuijian">
+    <text>今日推荐</text>
+    <navigator  class="tuijian_item" wx:for="{{todaydata}}" wx:key="_id" url="/pages/audio_details/index?_id={{item._id}}">
+        <view class="tuijian_left">
+         <image mode="widthFix" src="{{item.pic}}" style="height:auto"/>
+        </view>   
+        <view class="tuijian_right">
+            <view class="right_1">{{item.title}}</view>
+            <view class="right_2">今日推荐</view>
+           
+           
+        </view> 
+     </navigator>
+</view>
+
+<view class="today_tuijian">
+    <text>宝贝推荐</text>
+    <navigator  class="tuijian_item" wx:for="{{babydata}}" wx:key="_id" url="/pages/audio_details/index?_id={{item._id}}">
+        <view class="tuijian_left">
+         <image mode="widthFix" src="{{item.pic}}" style="height:auto"/>
+        </view>   
+        <view class="tuijian_right">
+            <view class="right_1">{{item.title}}</view>
+            <view class="right_2">宝贝推荐</view>
+            
+           
+        </view>
+    </navigator>
+       
+</view>
+<view  class="today_tuijian">
+    <text>良好习惯</text>
+    <navigator  class="tuijian_item" wx:for="{{fellingdata}}" wx:key="_id" url="/pages/audio_details/index?_id={{item._id}}">
+        <view class="tuijian_left">
+         <image mode="widthFix" src="{{item.pic}}" style="height:auto"/>
+        </view>   
+        <view class="tuijian_right">
+            <view class="right_1">{{item.title}}</view>
+            <view class="right_2">良好习惯</view>
+            
+        </view>
+    </navigator>
+</view>

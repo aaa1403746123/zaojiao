@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "searchInput":"../../components/Search_input/search_input"
+  },
+  "navigationBarTitleText": "小故事"
+  
+}
